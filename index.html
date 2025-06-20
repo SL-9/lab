@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+  <!-- 文字エンコーディング -->
+  <meta charset="utf-8">
+
+  <!-- モバイル端末対応（レスポンシブ設定） -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Open Graph設定（SNSなどでのシェア用） -->
+  <!-- ページの種類：Webサイト -->
+  <meta property="og:type" content="website">
+
+  <!-- ページのタイトル（シェア時に表示されるタイトル） -->
+  <meta property="og:title" content="SL9 lab">
+
+  <!-- ページのURL（正規のURL） -->
+  <meta property="og:url" content="https://pon-design.netlify.app/">
+
+  <!-- ページの説明文（シェア時に表示される概要） -->
+  <meta property="og:description"
+    content="SL9 labは、新規サイト制作や運用、グラフィックデザイン、デジタルイラスト制作を請け負います。">
+
+  <!-- シェア時に表示される画像のURL -->
+  <meta property="og:image" content="https://pon-design.netlify.app/img/ogp.png">
+
+  <!-- サイトの説明（SEO対策） -->
+  <meta name="description"
+    content="SL9 labは、新規サイト制作や運用、グラフィックデザイン、デジタルイラスト制作を請け負います。">
+
+  <title>SL9 lab</title>
+
+  <!-- Google Fonts（Montserratフォントを読み込み） -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome（アイコン用ライブラリ） -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
+
+  <!-- Nico Moji（フォント） -->
+  <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet" />
+
+  <!-- Noto Sans JP（フォント） -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Swiper（スライダー用CSSライブラリ） -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+
+  <!-- メインスタイルシート -->
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+
+  <!-- ファビコン設定（ブラウザタブ用アイコン） -->
+  <link rel="icon" type="image/png" href="img/icon-192x192.png">
+
+  <!-- Apple端末用ホームアイコン -->
+  <link rel="apple-touch-icon" type="image/png" href="img/apple-touch-icon-180x180.png">
+
+  <!-- レガシーブラウザ用ファビコン -->
+  <link rel="icon" href="img/favicon.ico">
+
+
+</head>
+
+<body>
+
+  <!-- .l-header -->
+  <header class="l-header">
+    <div class="l-header__logo">
+      <h1 class="logo">
+        <a href="." class="logo__link"><img class="logo__img" src="img/logo.svg" alt="PON DESIGN"></a>
+      </h1>
+    </div>
+    <div class="l-header__nav">
+      <nav class="p-global-nav">
+        <ul class="p-global-nav__list">
+          <li class="p-global-nav__item"><a class="p-global-nav__link" href="news.html">news</a></li>
+          <li class="p-global-nav__item"><a class="p-global-nav__link" href="service.html">service</a></li>
+          <li class="p-global-nav__item"><a class="p-global-nav__link" href="works.html">works</a></li>
+          <li class="p-global-nav__item"><a class="p-global-nav__link" href="about.html">about</a></li>
+          <li class="p-global-nav__item"><a class="p-global-nav__link" href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- ハンバーガー用 -->
+    <button type="button" class="c-btn-menu js-btn-menu">
+      <span class="c-btn-menu__line"></span>
+    </button>
+  </header>
+  <!-- /.l-header -->
+
+  <!-- .p-hero -->
+  <div class="p-hero">
+    <div class="p-hero__inner">
+      <div class="p-hero__heading">
+        <div class="p-hero__title">
+          Grow with them
+        </div>
+        <div class="p-hero__subtitle">
+          育む価値が、<br class="u-sp-only">未来の軌道を変える。
+        </div>
+      </div>
+      <div class="p-hero__link">
+        <a href="contact.html" class="c-btn c-btn--transparent">contact</a>
+      </div>
+    </div>
+    <span class="p-hero__scroll">SCROLL</span>
+
+    <div class="p-hero__bgParallax">
+      <video class="p-hero__bgParallax-video" playsinline muted autoplay loop>
+        <source src="video/bg_movie.mp4" type="video/mp4">
+      </video>
+    </div>
+    <!--
+      videoタグ：動画を表示
+      class="bgParallax-video"：背景パララックス用のクラス
+      playsinline：モバイルで全画面にせず再生
+      muted：音声オフ（自動再生対応）
+      autoplay：自動再生
+      loop：繰り返し再生
+    -->
+
+  </div>
+  <!-- /.p-hero -->
+
+  <!-- main -->
+  <main class="l-contents">
+
+    <!-- .p-news -->
+    <section class="p-news l-section">
+      <div class="p-news__inner l-inner">
+        <div class="p-news__heading">
+          <h2 class="c-heading-primary">news<span class="c-heading-primary__sub">お知らせ</span>
+          </h2>
+        </div>
+        <div class="p-news__body">
+          <div class="p-news-list">
+            <ul class="p-news-list__list">
+              <li class="p-news-list__item">
+                <div class="p-news-list__heading">
+                  <time datetime="2025-00-00" class="p-news-list__date">2025.00.00</time>
+                  <div class="p-news-list__label">
+                    <span class="c-label-category">お知らせ</span>
+                  </div>
+                </div>
+                <div class="p-news-list__body">
+                  <a href="news-article.html" class="p-news-list__link">Webサイトをリニューアルいたしました。</a>
+                </div>
+              </li>
+              <li class="p-news-list__item">
+                <div class="p-news-list__heading">
+                  <time datetime="2025-05-31" class="p-news-list__date">2025.05.31</time>
+                  <div class="p-news-list__label">
+                    <span class="c-label-category">制作実績</span>
+                  </div>
+                </div>
+                <div class="p-news-list__body">
+                  <a href="#" class="p-news-list__link">制作会社様より新規案件を受注いたしました。</a>
+                </div>
+              </li>
+              <li class="p-news-list__item">
+                <div class="p-news-list__heading">
+                  <time datetime="2024-12-31" class="p-news-list__date">2024.12.31</time>
+                  <div class="p-news-list__label">
+                    <span class="c-label-category">制作実績</span>
+                  </div>
+                </div>
+                <div class="p-news-list__body">
+                  <a href="#" class="p-news-list__link">映像会社様より海外発注の窓口として新規案件を受注いたしました。</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.p-news -->
+
+    <!-- .p-service -->
+    <section class="p-service l-section">
+      <div class="p-service__inner l-inner">
+        <div class="p-service__heading">
+          <h2 class="c-heading-primary">service<span class="c-heading-primary__sub">事業内容</span>
+          </h2>
+        </div>
+        <div class="p-service__body">
+          <div class="c-card-wrapper c-card-wrapper--col3">
+            <div class="c-card">
+              <div class="c-card__img-wrapper">
+                <img class="c-card__img" src="img/service01.jpg" alt="">
+              </div>
+              <div class="c-card__body">
+                <div class="c-card__title">Webサイト制作</div>
+                <div class="c-card__text">
+                  <p>新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。</p>
+                </div>
+              </div>
+            </div>
+            <div class="c-card">
+              <div class="c-card__img-wrapper">
+                <img class="c-card__img" src="img/service02.jpg" alt="">
+              </div>
+              <div class="c-card__body">
+                <div class="c-card__title">デザイン制作</div>
+                <div class="c-card__text">
+                  <p>ロゴやバナー、SNS画像など、ブランドに合わせた各種デザイン制作が可能です。</p>
+                </div>
+              </div>
+            </div>
+            <div class="c-card">
+              <div class="c-card__img-wrapper">
+                <img class="c-card__img" src=" img/service03.jpg" alt="">
+              </div>
+              <div class="c-card__body">
+                <div class="c-card__title">デジタルイラスト制作</div>
+                <div class="c-card__text">
+                  <p>挿絵・アイコン・キャラクターなど、雰囲気に合ったデジタルイラストをご提案・制作します。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-service__link">
+          <a href="service.html" class="c-btn">more</a>
+        </div>
+      </div>
+    </section>
+    <!-- /.p-service -->
+
+    <!-- .p-works -->
+    <section class="p-works l-section">
+      <div class="p-works__inner l-inner">
+        <div class="p-works__img-wrapper">
+          <div class="swiper-container js-swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/works/sl9.biz.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/works/engbody.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/works/planet-hunters.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="p-works__desc">
+          <div class="p-works__heading">
+            <h2 class="c-heading-primary">works<span class="c-heading-primary__sub">制作実績</span>
+            </h2>
+          </div>
+          <div class="p-works__body">
+            <div class="p-works__text">
+              <p>様々なジャンルの<br>
+              Webサイト制作・デザイン制作・イラスト制作が可能です。<br>
+              成果につながる導線設計で、<br>
+              ご購入やお申込みの増加を後押しします。</p>
+            </div>
+          </div>
+          <div class="p-works__link">
+            <a href="works.html" class="c-btn">more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.p-works -->
+
+    <!-- .p-about -->
+    <section class="p-about l-section">
+      <div class="p-about__inner l-inner">
+        <div class="p-about__heading">
+          <h2 class="c-heading-primary">about<span class="c-heading-primary__sub">私たちについて</span>
+          </h2>
+        </div>
+        <div class="p-about__body">
+          <div class="p-message">
+            <div class="p-message__heading">
+              <span class="p-message__underline">思い描いた未来を<br class="u-sp-only">現実にする力</span>
+            </div>
+            <div class="p-message__text">
+              <p>夢やビジョンをただの想いで終わらせず、<br>
+              実現するためのWebサイト・デザイン・イラストを<br>
+              お作りいたします。<br>
+              成果を出すために、すべての力を注いでサポートし、<br>
+              あなたの未来へと繋げていきます。</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-about__link">
+          <a href="about.html" class="c-btn">more</a>
+        </div>
+      </div>
+    </section>
+    <!-- /.p-about -->
+
+    <!-- .p-contact -->
+    <section class="p-contact l-section">
+      <div class="p-contact__inner l-inner">
+        <div class="p-contact__desc">
+          <div class="p-contact__desc-inner">
+            <div class="p-contact__heading">
+              <h2 class="c-heading-primary">contact<span class="c-heading-primary__sub">お問い合わせ</span>
+              </h2>
+            </div>
+            <div class="p-contact__body">
+              <div class="p-contact__text">
+                <p>ご相談やお見積りなど、<br>
+                お気軽にご相談ください。</p>
+              </div>
+            </div>
+            <div class="p-contact__btn">
+              <a href="contact.html" class="c-btn">more</a>
+            </div>
+          </div>
+        </div>
+        <div class="p-contact__img-wrapper">
+          <!-- <img class="p-contact__img" src="img/contact.jpg" alt=""> -->
+        </div>
+      </div>
+    </section>
+    <!-- /.p-contact -->
+
+  </main>
+  <!-- /main -->
+
+  <!-- .l-footer -->
+  <footer class="l-footer">
+    <nav class="l-footer-nav">
+      <ul class="l-footer-nav__list">
+        <li class="l-footer-nav__item"><a class="l-footer-nav__link" href=".">HOME</a></li>
+        <li class="l-footer-nav__item"><a class="l-footer-nav__link" href="news.html">news</a></li>
+        <li class="l-footer-nav__item"><a class="l-footer-nav__link" href="service.html">service</a></li>
+        <li class="l-footer-nav__item"><a class="l-footer-nav__link" href="works.html">works</a></li>
+        <li class="l-footer-nav__item"><a class="l-footer-nav__link" href="about.html">about</a></li>
+        <li class="l-footer-nav__item"><a class="l-footer-nav__link" href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+    <div class="c-copyright">
+      <a href="." class="c-copyright__link">&copy;SL9 lab 2025</a>
+    </div>
+  </footer>
+  <!-- /.l-footer -->
+
+  <!-- ページトップに戻るボタン -->
+  <div class="c-page-top">
+
+    <!-- 上向き矢印アイコン付きのリンク -->
+    <a href="#" class="c-page-top__link">
+
+      <!-- Font Awesome のアイコン：上向き矢印 -->
+      <i class="fas fa-arrow-up" aria-hidden="true"></i>
+
+    </a>
+  </div>
+
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
